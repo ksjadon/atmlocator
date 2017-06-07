@@ -18,3 +18,20 @@ http://localhost:8080/atmLocator/atm/city/cityName
 
 * There is no need to create two services but as I developed SPRING rest api first and later don't get enough time to integrate with Camel, I created another service for just integratin.
 
+/**
+ * 
+ * Exposes a CXF service
+ * 
+ */
+ 
+@Component
+@Path("/getAtm")
+
+public interface AtmLocationService {
+
+	@GET
+	@Path("/{city}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public ResponseEntity<CityATMList> getATMList(@PathParam("city") String city);
+
+}
