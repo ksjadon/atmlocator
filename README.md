@@ -16,5 +16,5 @@ http://localhost:8080/atmLocator/atm/city/cityName
 
 --> This is the first time I am using Apache Camel and not aware of basic.It's time taking development for me to integrate with Spring. So I didn't coded all module and just created a architecture to achive the things. 
 
-* There is no need to create two services but as I developed SPRING rest api first and later don't get enough time to integrate with Camel, I created another serice for just integratin.
+* There is no need to create two services but as I developed SPRING rest api first and later don't get enough time to integrate with Camel, I created another service for just integratin.
 
